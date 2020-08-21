@@ -1,4 +1,4 @@
-## React Netflix Colone
+## React Netflix Clone
 
 #### Example:
 
