@@ -1,9 +1,15 @@
+.row {
+  margin-left: 20px;
+  color: #fff;
+}
+
 .row_posters {
   display: flex;
   /* Without this hidden the ui is scrollable vertically */
   overflow-y: hidden;
   /* This enables posters scrollable */
   overflow-x: scroll;
+  padding: 20px;
 }
 
 /* Hide scrollbar  UI */
@@ -15,7 +21,7 @@
   /* This will adjust aspect ratio of item */
   object-fit: contain;
   width: 100%;
-  max-width: 100px;
+  max-height: 100px;
   margin-right: 10px;
   /* transform duration */
   transition: transform 450ms;
@@ -24,4 +30,13 @@
 .row_poster:hover {
   /* grow ui */
   transform: scale(1.08);
+}
+
+.row_poster_lg {
+  max-height: 250px;
+}
+
+.row_poster_lg:hover {
+  /* grow ui */
+  transform: scale(1.09);
 }
