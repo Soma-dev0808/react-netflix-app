@@ -3,6 +3,7 @@ import { fetchData } from "../service";
 
 import "./Row.css";
 
+// This is reusable component
 function Row(props) {
   const { title, fetchUrl } = props;
   const [movies, setMovies] = useState([]);
