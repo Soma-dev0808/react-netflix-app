@@ -1,0 +1,27 @@
+.row_posters {
+  display: flex;
+  /* Without this hidden the ui is scrollable vertically */
+  overflow-y: hidden;
+  /* This enables posters scrollable */
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar  UI */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  /* This will adjust aspect ratio of item */
+  object-fit: contain;
+  width: 100%;
+  max-width: 100px;
+  margin-right: 10px;
+  /* transform duration */
+  transition: transform 450ms;
+}
+
+.row_poster:hover {
+  /* grow ui */
+  transform: scale(1.08);
+}
